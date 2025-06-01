@@ -1,12 +1,51 @@
-# React + Vite
+# React API Fetch Example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo: [https://fetch-api-from-jsonplaceholder.vercel.app](https://fetch-api-from-jsonplaceholder.vercel.app)
 
-Currently, two official plugins are available:
+This is a simple React application that demonstrates fetching data from an external API and displaying it dynamically based on user interaction.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Fetch users from JSONPlaceholder API.
+- Display users in a sidebar.
+- Click a user to fetch and display their posts.
+- Show loading states and handle errors.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+
+- React (with Hooks: useState, useEffect)
+- Tailwind CSS for styling
+- JSONPlaceholder API
+
+## How It Works
+
+1. On page load, the app fetches a list of users.
+2. When a user is clicked, their ID is used to fetch corresponding posts.
+3. Posts are displayed in the main section.
+
+---
+
+# مثال على استخدام API في React
+
+الرابط المباشر للتطبيق: [https://fetch-api-from-jsonplaceholder.vercel.app](https://fetch-api-from-jsonplaceholder.vercel.app)
+
+هذا مشروع بسيط باستخدام React لعرض كيفية جلب البيانات من API خارجي (JSONPlaceholder) وعرضها حسب تفاعل المستخدم.
+
+## المميزات
+
+- جلب المستخدمين من JSONPlaceholder API.
+- عرض المستخدمين في الشريط الجانبي.
+- عند الضغط على مستخدم يتم عرض منشوراته.
+- عرض حالة التحميل ومعالجة الأخطاء.
+
+## التقنيات المستخدمة
+
+- React (باستخدام useState و useEffect)
+- Tailwind CSS للتصميم
+- JSONPlaceholder API
+
+## آلية العمل
+
+1. عند تحميل الصفحة يتم جلب المستخدمين.
+2. عند الضغط على مستخدم، يتم جلب المنشورات المرتبطة به.
+3. يتم عرض المنشورات في القسم الرئيسي.
