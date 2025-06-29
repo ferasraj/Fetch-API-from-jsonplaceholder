@@ -36,7 +36,7 @@ const ApiTest = () => {
   }, [selectedUser]);
 
   return (
-    <div className="flex flex-col md:flex-row h-screen">
+    <div className="flex flex-col md:flex-row min-h-screen">
       <aside className="w-full md:w-1/4 bg-white border-r p-4 overflow-y-auto">
         <h2 className="text-xl font-bold mb-4">Users</h2>
         {users.map((user) => (
@@ -61,7 +61,7 @@ const ApiTest = () => {
           </div>
         ))}
       </aside>
-      <main className="flex-1 p-6 overflow-y-auto">
+      <main className="flex-1 p-6 overflow-y-auto min-w-0">
         <h2 className="text-2xl font-bold mb-6">Posts</h2>
         {loading && <p>Loading posts...</p>}
         {error && <p className="text-red-600 font-semibold">{error}</p>}
